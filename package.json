@@ -1,0 +1,25 @@
+{
+  "name": "@finn-no/ssn-lib",
+  "version": "1.0.0",
+  "description": "ssn utils for frontend",
+  "type": "module",
+  "module": "dist/ssn.js",
+  "exports": "./dist/ssn.js",
+  "types": "./types/ssn.d.ts",
+  "scripts": {
+    "test": "node test",
+    "check": "tsc",
+    "build": "rollup -c",
+    "preversion": "npm run test && npm run build && npm run check",
+    "version": "npm publish",
+    "postversion": "git push --follow-tags"
+  },
+  "keywords": [],
+  "author": "Dave Honneffer",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.23.1",
+    "typescript": "^4.3.4",
+    "uvu": "^0.5.1"
+  }
+}
