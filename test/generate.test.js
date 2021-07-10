@@ -26,16 +26,16 @@ Generate('unique if called twice', () => {
 })
 
 Generate('generates a specific gender', () => {
-  const date = new Date()
+  const date = new Date("1987-07-10")
   const all = generateAll(date)
   const females = generateAll(date, "F")
   const males = generateAll(date, "M")
   assert.ok(all.length > females.length)
   assert.ok(all.length > males.length)
-  assert.is(females.length, 166)
-  assert.is(males.length, 167)
-  assert.ok(females.includes('19062150044'))
-  assert.ok(males.includes('19062150125'))
+  assert.is(females.length, 203)
+  assert.is(males.length, 198)
+  assert.ok(females.includes('10078703291'))
+  assert.ok(males.includes('10078706177'))
 })
 
 Generate.run()
