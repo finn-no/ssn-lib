@@ -1,6 +1,6 @@
 {
   "name": "@finn-no/ssn-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ssn utils for frontend",
   "type": "module",
   "module": "dist/ssn.js",
