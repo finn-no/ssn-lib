@@ -14,6 +14,10 @@
     "version": "npm publish",
     "postversion": "git push --follow-tags"
   },
+  "files": [
+    "/dist",
+    "/types"
+  ],
   "keywords": [],
   "author": "Dave Honneffer",
   "license": "MIT",
